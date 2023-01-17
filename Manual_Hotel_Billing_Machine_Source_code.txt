@@ -1,0 +1,201 @@
+package hotel_Menu_Items_TotalBill;                                                                                                                                    *OUTPUT FOR GO DOWN*
+                                                                                                                                                                                                ******************************
+import java.util.Scanner;
+
+public class MENU_WITH_TOTALBILL {
+
+	public static void main(String[] args) {
+				
+		Scanner sc = new Scanner(System.in);
+			
+			int QUANTITY,AMOUNT,BILL=0,i;
+			
+			do 
+			{
+			System.out.println();	
+			System.out.println("          SIVA-MALLI HOTEL");
+			System.out.println();
+			System.out.println();
+			
+			System.out.println("What is your choice ?");
+			System.out.println();
+			System.out.println("1 PONGAL+VADA          ------- RS.40");
+			System.out.println("2 IDLY+SAMBAR          ------- RS.30");
+			System.out.println("3 DOSA+KOBBARA_CHETNEY ------- RS.45");
+			System.out.println("4 UPMA+CURD            ------- RS.30");
+			System.out.println("5 UGGANI+BAJJI         ------- RS.35");
+			System.out.println("6 CHAPATHI+PAPPU       ------- RS.50");
+			System.out.println("7 TEA+SAMOSA           ------- RS.25");
+			System.out.println("8 POORI+KURMA          ------- RS.40");
+			System.out.println();
+			
+			System.out.println("PRESS 1 for --->>> MOVE TO SELECT NEXT_ITEM SHOWN");
+			System.out.println("PRESS 0 for --->>> TOTAL_BILL OF SELECTED ITEMS SHOWN");
+			System.out.println();
+		    System.out.println();
+		    System.out.println();
+		    
+			int n = sc.nextInt();
+			
+			switch(n)
+			{
+			case 1:
+				System.out.println("PONGAL VADA QUANTITY?");
+				QUANTITY = sc.nextInt();
+				AMOUNT = QUANTITY*40;
+				BILL = BILL+AMOUNT;
+				break;
+				
+			case 2:
+				System.out.println("IDLY SAMBAR QUANTITY?");
+				QUANTITY = sc.nextInt();
+				AMOUNT = QUANTITY*30;
+				BILL = BILL+AMOUNT;
+				break;	
+				
+			case 3:
+				System.out.println("DOSA KOBBARA_CHETNEY QUANTITY?");
+				QUANTITY = sc.nextInt();
+				AMOUNT = QUANTITY*45;
+				BILL = BILL+AMOUNT;
+				break;	
+				
+			case 4:
+				System.out.println("UPMA CURD QUANTITY?");
+				QUANTITY = sc.nextInt();
+				AMOUNT = QUANTITY*30;
+				BILL = BILL+AMOUNT;
+				break;	
+				
+			case 5:
+				System.out.println("UGGANI BAJJI QUANTITY?");
+				QUANTITY = sc.nextInt();
+				AMOUNT = QUANTITY*35;
+				BILL = BILL+AMOUNT;
+				break;
+				
+			case 6:
+				System.out.println("CHAPATHI PAPPU QUANTITY?");
+				QUANTITY = sc.nextInt();
+				AMOUNT = QUANTITY*50;
+				BILL = BILL+AMOUNT;
+				break;	
+				
+			case 7:
+				System.out.println("TEA SAMOSA QUANTITY?");
+				QUANTITY = sc.nextInt();
+				AMOUNT = QUANTITY*25;
+				BILL = BILL+AMOUNT;
+				break;
+				
+			case 8:
+				System.out.println("POORI KURMA QUANTITY?");
+				QUANTITY = sc.nextInt();
+				AMOUNT = QUANTITY*40;
+				BILL = BILL+AMOUNT;
+				break;	
+				
+			default :
+				System.out.println("Sorry invalid items, Please choose valid items ");
+				break;
+				
+			}
+			
+			System.out.println("You want To continue... PRESS 1 or PRESS 0");
+			i=sc.nextInt();
+		   } 
+		     
+		    while (i==1);
+			System.out.println();
+		    System.out.println();
+		    System.out.println();
+		    System.out.println("Your total bill is : "+BILL);
+		    System.out.println();
+		    System.out.println();
+		    System.out.println();
+		    System.out.println("                    ThankQ Visit Again");
+		    System.out.println("                     SIVA-MALLI HOTEL");
+		   
+	     
+		}
+
+}
+
+
+
+
+
+
+
+                                                               ******************************
+                                                              *              OUTPUT              *
+                                                              *******************************
+
+
+
+          SIVA-MALLI HOTEL
+
+
+What is your choice ?
+
+1 PONGAL+VADA          ------- RS.40
+2 IDLY+SAMBAR          ------- RS.30
+3 DOSA+KOBBARA_CHETNEY ------- RS.45
+4 UPMA+CURD            ------- RS.30
+5 UGGANI+BAJJI         ------- RS.35
+6 CHAPATHI+PAPPU       ------- RS.50
+7 TEA+SAMOSA           ------- RS.25
+8 POORI+KURMA          ------- RS.40
+
+PRESS 1 for --->>> MOVE TO SELECT NEXT_ITEM SHOWN
+PRESS 0 for --->>> TOTAL_BILL OF SELECTED ITEMS SHOWN
+
+
+
+6
+CHAPATHI PAPPU QUANTITY?
+10
+You want To continue... PRESS 1 or PRESS 0
+1
+
+          SIVA-MALLI HOTEL
+
+
+What is your choice ?
+
+1 PONGAL+VADA          ------- RS.40
+2 IDLY+SAMBAR          ------- RS.30
+3 DOSA+KOBBARA_CHETNEY ------- RS.45
+4 UPMA+CURD            ------- RS.30
+5 UGGANI+BAJJI         ------- RS.35
+6 CHAPATHI+PAPPU       ------- RS.50
+7 TEA+SAMOSA           ------- RS.25
+8 POORI+KURMA          ------- RS.40
+
+PRESS 1 for --->>> MOVE TO SELECT NEXT_ITEM SHOWN
+PRESS 0 for --->>> TOTAL_BILL OF SELECTED ITEMS SHOWN
+
+
+
+3
+DOSA KOBBARA_CHETNEY QUANTITY?
+2
+You want To continue... PRESS 1 or PRESS 0
+0
+
+
+
+Your total bill is : 590
+
+
+
+                    ThankQ Visit Again
+                     SIVA-MALLI HOTEL
+
+
+
+
+
+
+
+
